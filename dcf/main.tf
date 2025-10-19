@@ -56,7 +56,7 @@ resource "aviatrix_distributed_firewalling_policy_list" "default" {
       aviatrix_web_group.allow_internet_https.uuid
     ]
   }
-    policies {
+  policies {
     name     = "allow-rfc1918"
     action   = "PERMIT"
     priority = 1002
